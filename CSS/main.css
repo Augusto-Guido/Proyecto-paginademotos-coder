@@ -1,0 +1,171 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header{
+    display: flex;
+    background-color: orange;
+    flex-direction: column;
+    align-items: center;
+    grid-area: header;   
+}
+
+header h1{
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    column-gap: 5px;
+}
+
+/*estilos de header */
+header nav ul li{
+    display: inline-block;
+    background-color: white;
+    font-size: 16px;
+    font: bold;
+    padding: 8px;
+    border-style: none;
+    box-shadow: 2px 2px;
+    margin-bottom: 10px;
+
+}
+
+
+.titulo{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5rem;
+    margin-top: 10px;
+}
+
+/* estilos de footer */
+
+footer p{
+    text-align: center;
+    background-color: orange;
+    margin-top: 100px;
+}
+
+/* estilo de fondo */
+
+
+
+body {
+    background-color: whitesmoke;
+    min-width: 100;
+}
+
+html{
+    min-height: 100%;
+}
+
+/* imagen fixed */
+.consultas{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* formulario de contacto */
+
+.contactanos{
+    display: flex;
+    justify-content: center;
+}
+
+/* imagen principal del index */
+.moto{
+    display: flex;
+    justify-content: center;
+}
+
+/* Proximamente productos */
+
+.producto{
+    background-color: coral;
+    display: inline-block;
+    width: 300px;
+    height: 300px; 
+    margin: 120px 120px 50px 120px; 
+    border-style: groove;
+}
+
+.productoDos{
+    background-color: coral;
+    display: inline-block;
+    width: 300px;
+    height: 300px; 
+    margin:  0px 120px 50px 120px; 
+    border-style: groove;
+}
+
+main{
+    text-align: center;
+    grid-area: main;
+    height: 75vh;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 87% 1%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+@media screen and (min-width:1024px){
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:600px){
+    header h1{
+        font-size: 3rem;
+    }
+
+    header nav ul li{
+        font-size: 1.2rem;
+    }
+}
+
+
+.contenedor2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12% 87% 1%;
+    grid-template-areas: 
+    "header header"
+    "mapa main"
+    "footer footer"
+    ;
+}
+
+main div .mapa1{ 
+    grid-area: mapa;
+}
+
+
+
+
+
+
+
