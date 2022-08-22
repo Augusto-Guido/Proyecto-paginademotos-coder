@@ -25,17 +25,22 @@ header h1:hover{
     transform: scale(1.1);
 }
 
+.texto{
+    margin-top: 30px;
+}
+
 header nav ul{
     display: flex;
+    
     list-style: none;
     column-gap: 5px;
 }
 
 /*estilos de header */
 header nav ul li{
-    padding: 8px;
+    padding: 1px;
     border-style: none;
-    margin-bottom: 10px;
+    margin-left: 10px;
     background-color: whitesmoke;
 
 }
@@ -99,6 +104,7 @@ html{
 .moto{
     display: flex;
     justify-content: center;
+    
 }
 
 /* Proximamente productos */
@@ -174,3 +180,5 @@ main{
 main div .mapa1{ 
     grid-area: mapa;
 }
+
+
